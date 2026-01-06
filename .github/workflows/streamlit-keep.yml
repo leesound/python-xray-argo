@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [service-down-alert]
-  # schedule:
-  #   - cron: '0 22 * * *' # 每天 UTC 22:00 运行
+  schedule:
+    - cron: '0 2,14 * * *' # 北京时间 10:00 (UTC 02:00) 和 22:00 (UTC 14:00)
 
 jobs:
   wakeup:
