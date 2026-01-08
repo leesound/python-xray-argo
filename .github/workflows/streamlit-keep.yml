@@ -5,7 +5,7 @@ on:
   repository_dispatch:
     types: [service-down-alert]
   schedule:
-    - cron: '0 2,14 * * *' # 北京时间 10:00 (UTC 02:00) 和 22:00 (UTC 14:00)
+    - cron: '20 3,15 * * *' # 北京时间 11:20 (UTC 03:20) 和 23:20 (UTC 15:20)
 
 jobs:
   wakeup:
